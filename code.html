@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ thêu Thanh Hà</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+        body {
+            background-color: #F7F2E9;
+            color: #49372D;
+        }
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: Playfair Display, serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #49372D;
+            font-weight: 500;
+        }
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(247, 242, 233, 0.8), rgba(247, 242, 233, 0.8)), url('https://picsum.photos/1920/1080?embroidery');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: Playfair Display, serif;
+            font-size: 56px;
+            color: #49372D;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #A8473E;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .collection {
+            padding: 60px 5%;
+        }
+        .collection h2 {
+            font-family: Playfair Display, serif;
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            font-family: Playfair Display, serif;
+            margin-bottom: 10px;
+        }
+        .social-links {
+            padding: 40px 5%;
+            background-color: #FFF;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .social-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #49372D;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #F7F2E9;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Đồ thêu Thanh Hà</div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Quy trình</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Đồ thêu Thanh Hà</h1>
+        <p>Gìn giữ tinh hoa – Thêu dệt giá trị truyền thống</p>
+        <a href="#" class="btn">Khám phá bộ sưu tập</a>
+    </section>
+
+    <section class="collection">
+        <h2>Bộ sưu tập nổi bật</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://picsum.photos/400/300?embroidery1" alt="Sản phẩm thêu">
+                <h3>Tranh thêu hoa văn cổ</h3>
+                <p>Được thêu thủ công 100% với chỉ tơ tây.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://picsum.photos/400/300?embroidery2" alt="Sản phẩm thêu">
+                <h3>Túi thêu tay</h3>
+                <p>Thiết kế hiện đại, kết hợp nét thêu truyền thống.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://picsum.photos/400/300?embroidery3" alt="Sản phẩm thêu">
+                <h3>Khăn thêu quà tặng</h3>
+                <p>Chất liệu cao cấp, phù hợp làm quà biếu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-links">
+        <a href="#" class="social-btn">
+            <div style="font-size: 24px;">📘</div>
+            <span>Facebook</span>
+        </a>
+        <a href="#" class="social-btn">
+            <div style="font-size: 24px;">🎵</div>
+            <span>TikTok</span>
+        </a>
+        <a href="#" class="social-btn">
+            <div style="font-size: 24px;">🛒</div>
+            <span>Shopee</span>
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2024 Đồ thêu Thanh Hà. Tất cả quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>
